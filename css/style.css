@@ -12,6 +12,7 @@ body {
     Arial,
     sans-serif;
   line-height: 1.4;
+  background-color: rgb(254, 190, 190);
 }
 
 .site-header {
@@ -144,6 +145,7 @@ body {
 
 h1 {
   text-align: center;
+  font-family: "Ballet", cursive;
 }
 
 h2 {
