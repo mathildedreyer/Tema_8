@@ -1,71 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FashionRUs – Nike</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
-      <h1>FashionRUs</h1>
+    <header class="site-header">
+      <h1>Nike</h1>
     </header>
 
-    <main>
-      <h2>FOOTWEAR</h2>
-
-      <section class="product_list_container">
-        <div class="product">
-          <a href="product.html">
+    <main class="page">
+      <section class="product-list" aria-label="Produktliste">
+        <article class="product">
+          <a class="product__image-link" href="product.html">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1546.webp"
-              alt=""
+              alt="Sahara Team India Fanwear Round Neck Jersey"
             />
           </a>
-          <h3>Lorem Lorem Lorem</h3>
-          <p class="name">Loren/Lorem</p>
-          <p>DKK 0000,-</p>
-          <a href="product.html">Read more</a>
-        </div>
 
-        <div class="product">
-          <a href="product.html">
+          <h2 class="product__title">
+            Sahara Team India Fanwear<br />Round Neck Jersey
+          </h2>
+
+          <p class="product__meta">Tshirts | Nike</p>
+
+          <p class="product__price">DKK 1595,-</p>
+
+          <a class="product__link" href="product.html">Read More</a>
+        </article>
+
+        <article class="product product--discount">
+          <a class="product__image-link" href="product.html">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1547.webp"
-              alt=""
+              alt="Blue T20 Indian Cricket Jersey"
             />
+            <span class="badge badge--discount">-34%</span>
           </a>
-          <h3>Lorem Lorem Lorem</h3>
-          <p class="name">Loren/Lorem</p>
-          <p>DKK 0000,-</p>
-          <a href="product.html">Read more</a>
-        </div>
 
-        <div class="product">
-          <a href="product.html">
+          <h2 class="product__title">Blue T20 Indian Cricket<br />Jersey</h2>
+
+          <p class="product__meta">Tshirts | Nike</p>
+
+          <p class="product__price">
+            <span class="product__price-prev">Prev. DKK 1595,-</span><br />
+            <span class="product__price-now">Now DKK 1560,-</span>
+          </p>
+
+          <a class="product__link" href="product.html">Read More</a>
+        </article>
+
+        <article class="product product--soldout">
+          <a class="product__image-link" href="product.html">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1548.webp"
-              alt=""
+              alt="Blue T20 Indian Cricket Jersey"
             />
+            <span class="badge badge--soldout">Sold Out</span>
           </a>
-          <h3>Lorem Lorem Lorem</h3>
-          <p class="name">Loren/Lorem</p>
-          <p>DKK 0000,-</p>
-          <a href="product.html">Read more</a>
-        </div>
+          <h2 class="product__title">Blue T20 Indian Cricket<br />Jersey</h2>
 
-        <div class="product">
-          <a href="product.html">
+          <p class="product__meta">Tshirts | Nike</p>
+
+          <p class="product__price">DKK 1595,-</p>
+
+          <a class="product__link" href="product.html">Read More</a>
+        </article>
+
+        <article class="product product--soldout product--discount">
+          <a class="product__image-link" href="product.html">
             <img
               src="https://kea-alt-del.dk/t7/images/webp/640/1549.webp"
-              alt=""
+              alt="Blue T20 Indian Cricket Jersey"
             />
+            <span class="badge badge--soldout">Sold Out</span>
+            <span class="badge badge--discount">-34%</span>
           </a>
-          <h3>Lorem Lorem Lorem</h3>
-          <p class="name">Loren/Lorem</p>
-          <p>DKK 0000,-</p>
-          <a href="product.html">Read more</a>
-        </div>
+
+          <h2 class="product__title">Blue T20 Indian Cricket<br />Jersey</h2>
+
+          <p class="product__meta">Tshirts | Nike</p>
+
+          <p class="product__price">
+            <span class="product__price-prev">Prev. DKK 1595,-</span><br />
+            <span class="product__price-now">Now DKK 1560,-</span>
+          </p>
+
+          <a class="product__link" href="product.html">Read More</a>
+        </article>
       </section>
     </main>
   </body>

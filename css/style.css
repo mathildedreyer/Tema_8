@@ -1,3 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  line-height: 1.4;
+}
+
+.site-header {
+  padding: 24px 24px 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+}
+
+.page {
+  padding: 24px;
+}
+
+/* Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .product-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Product card */
+.product {
+  display: grid;
+  gap: 10px;
+}
+
+.product__image-link {
+  position: relative;
+  display: block;
+  background: #f5f5f5;
+}
+
+.product__image-link img {
+  width: 100%;
+  display: block;
+}
+
+/* Sold out effect (gør billedet lidt “faded” som i screenshot) */
+.product--soldout .product__image-link img {
+  opacity: 0.35;
+}
+
+/* Text */
+.product__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product__meta {
+  margin: 0;
+  color: #b5b5b5;
+  font-size: 14px;
+}
+
+.product__price {
+  margin: 0;
+  font-size: 15px;
+}
+
+.product__price-prev {
+  color: #555;
+}
+
+.product__price-now {
+  color: #111;
+}
+
+/* Link */
+.product__link {
+  color: #111;
+  text-decoration: underline;
+  font-size: 14px;
+  width: fit-content;
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.badge--soldout {
+  top: 0;
+  left: 0;
+  background: #777;
+  color: #fff;
+}
+
+.badge--discount {
+  right: 0;
+  bottom: 0;
+  background: #e53935;
+  color: #111;
+}
+
 .category_list_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
