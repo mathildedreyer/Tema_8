@@ -29,7 +29,6 @@ body {
   padding: 24px;
 }
 
-/* Grid */
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -37,20 +36,6 @@ body {
   align-items: start;
 }
 
-/* Responsive */
-@media (max-width: 1000px) {
-  .product-list {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 560px) {
-  .product-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Product card */
 .product {
   display: grid;
   gap: 10px;
@@ -67,12 +52,10 @@ body {
   display: block;
 }
 
-/* Sold out effect (gør billedet lidt “faded” som i screenshot) */
 .product--soldout .product__image-link img {
   opacity: 0.35;
 }
 
-/* Text */
 .product__title {
   margin: 0;
   font-size: 16px;
@@ -81,7 +64,7 @@ body {
 
 .product__meta {
   margin: 0;
-  color: #b5b5b5;
+  color: #090909;
   font-size: 14px;
 }
 
@@ -98,7 +81,6 @@ body {
   color: #111;
 }
 
-/* Link */
 .product__link {
   color: #111;
   text-decoration: underline;
@@ -106,7 +88,6 @@ body {
   width: fit-content;
 }
 
-/* Badges */
 .badge {
   position: absolute;
   padding: 10px 14px;
@@ -216,7 +197,6 @@ h2 {
   margin: 0;
 }
 
-/* “Brand” tekst */
 .brand-title {
   margin: 0 0 8px;
   font-size: 44px;
@@ -225,11 +205,11 @@ h2 {
 
 .brand-text {
   margin: 0;
-  color: #444;
+  color: #874e4e;
 }
 
 .buy-box {
-  background: #d9d9d9;
+  background: #fb9292;
   padding: 28px;
 }
 
@@ -241,7 +221,7 @@ h2 {
 
 .buy-box__meta {
   margin: 0 0 18px;
-  color: #666;
+  color: #000000;
 }
 
 .buy-box__price {
@@ -265,7 +245,7 @@ h2 {
   margin-top: 16px;
   padding: 12px;
   border: 0;
-  background: #846767;
+  background: #ffffff;
   font-weight: 700;
   cursor: pointer;
 }
