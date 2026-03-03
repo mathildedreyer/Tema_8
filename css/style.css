@@ -49,6 +49,7 @@ body {
 
 .product__image-link img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -172,7 +173,6 @@ h2 {
 
 .product-page__media img {
   width: 100%;
-  display: block;
 }
 
 .product-page__headline {
