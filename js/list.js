@@ -1,8 +1,11 @@
 "use strict";
 
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
 const productContainer = document.querySelector(".product_list_container");
 
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch(`https://kea-alt-del.dk/t7/api/products?category=${category}`)
   .then((response) => response.json())
   .then((data) => {
     showProducts(data);
@@ -17,16 +20,12 @@ function showProducts(productsArr) {
       ? `<p class="soldoutTxt color_me_black_and_red">SOLD OUT</p>`
       : "";
 
-    // Brug API-data i stedet for hardcoded
     const title =
       product.productdisplayname || product.articletype || "Produkt";
     const subtitle = `${product.articletype || ""}${product.brandname ? " | " + product.brandname : ""}`;
 
-    // Pris
     const price = product.price ?? "";
 
-    // Hvis du senere får discount-felter, kan du sætte dem på her:
-    // Lige nu skjuler vi discount-boksen, så den ikke står tom.
     const discountHTML = "";
 
     productContainer.innerHTML += `

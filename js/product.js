@@ -17,7 +17,6 @@ if (!id) {
 
       const price = data.price ?? "";
 
-      // discount? (kun hvis discountedPrice findes og er lavere end price)
       const hasDiscount =
         data.discountedPrice !== null &&
         data.discountedPrice !== undefined &&
