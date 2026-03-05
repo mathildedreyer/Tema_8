@@ -3,103 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ex Insula Studio</title>
+    <title>Produktliste</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap"
-      rel="stylesheet"
-    />
+
+    <script src="js/list.js" defer></script>
   </head>
 
   <body>
-    <header class="site-header">
-      <h1>Ex Insula Studio</h1>
-      <h2>Buy what you need!</h2>
+    <header>
+      <h1>Produktliste</h1>
     </header>
 
-    <main class="page">
-      <section class="product-list" aria-label="Produktliste">
-        <article class="product">
-          <a class="product__image-link" href="product.html">
-            <img
-              src=" https://kea-alt-
-del.dk/t7/images/webp/640/1540.webp"
-              alt="Sahara Team India Fanwear Round Neck Jersey"
-            />
-          </a>
-
-          <h2 class="product__title">Tied up loose jeans</h2>
-
-          <p class="product__meta">Demin | Jeans</p>
-
-          <p class="product__price">DKK 1595,-</p>
-
-          <a class="product__link" href="product.html">Read More</a>
-        </article>
-
-        <article class="product product--discount">
-          <a class="product__image-link" href="product.html">
-            <img
-              src="https://kea-alt-
-del.dk/t7/images/webp/640/1590.webp"
-              alt="Blue T20 Indian Cricket Jersey"
-            />
-            <span class="badge badge--discount">-34%</span>
-          </a>
-
-          <h2 class="product__title">Ultra flare jeans</h2>
-
-          <p class="product__meta">Demin | Jeans</p>
-
-          <p class="product__price">
-            <span class="product__price-prev">Prev. DKK 1595,-</span><br />
-            <span class="product__price-now">Now DKK 1560,-</span>
-          </p>
-
-          <a class="product__link" href="product.html">Read More</a>
-        </article>
-
-        <article class="product product--soldout">
-          <a class="product__image-link" href="product.html">
-            <img
-              src=" https://kea-alt-
-del.dk/t7/images/webp/640/1550.webp"
-              alt="Blue T20 Indian Cricket Jersey"
-            />
-            <span class="badge badge--soldout">Sold Out</span>
-          </a>
-          <h2 class="product__title">Baggy babe jeans</h2>
-
-          <p class="product__meta">Demin | Jeans</p>
-
-          <p class="product__price">DKK 399,-</p>
-
-          <a class="product__link" href="product.html">Read More</a>
-        </article>
-
-        <article class="product product--soldout product--discount">
-          <a class="product__image-link" href="product.html">
-            <img
-              src=" https://kea-alt-
-del.dk/t7/images/webp/640/1579.webp"
-              alt="high wide jeans"
-            />
-            <span class="badge badge--soldout">Sold Out</span>
-            <span class="badge badge--discount">-20%</span>
-          </a>
-
-          <h2 class="product__title">High wide jeans</h2>
-
-          <p class="product__meta">Demin | Jeans</p>
-
-          <p class="product__price">
-            <span class="product__price-prev">Prev. DKK 699,-</span><br />
-            <span class="product__price-now">Now DKK 399,-</span>
-          </p>
-
-          <a class="product__link" href="product.html">Read More</a>
-        </article>
-      </section>
+    <main>
+      <div class="product_list_container"></div>
     </main>
   </body>
 </html>

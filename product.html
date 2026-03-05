@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap"
       rel="stylesheet"
     />
+    <script src="js/product.js" defer></script>
   </head>
 
   <body>
@@ -23,49 +24,10 @@
         <span>›</span>
         <a href="productlist.html">Products</a>
         <span>›</span>
-        <span>Tied up loose jeans</span>
+        <span class="breadcrumb-current">Product</span>
       </nav>
 
-      <section class="product-page">
-        <div class="product-page__media">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/1000/1540.webp"
-            alt="Tied up loose jeans"
-          />
-        </div>
-
-        <div class="product-page__info">
-          <dl class="product-specs">
-            <div class="product-specs__row">
-              <dt>Model name</dt>
-              <dd>Tied up loose jeans</dd>
-            </div>
-
-            <div class="product-specs__row">
-              <dt>Color</dt>
-              <dd>Blue</dd>
-            </div>
-          </dl>
-        </div>
-        <aside class="buy-box" aria-label="Køb produkt">
-          <h2 class="buy-box__title">Tied up loose jeans</h2>
-          <p class="buy-box__meta">Denim | Jeans</p>
-
-          <p class="buy-box__price">DKK 1595,-</p>
-
-          <label class="buy-box__label" for="size">Choose a size</label>
-          <div class="buy-box__row">
-            <select id="size" class="buy-box__select">
-              <option>S</option>
-              <option>M</option>
-              <option>L</option>
-              <option>XL</option>
-            </select>
-          </div>
-
-          <button class="buy-box__btn" type="button">Add to basket</button>
-        </aside>
-      </section>
+      <section id="productContainer"></section>
     </main>
   </body>
 </html>
