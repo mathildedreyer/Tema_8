@@ -22,11 +22,27 @@ function showProducts(productsArr) {
 
     const title =
       product.productdisplayname || product.articletype || "Produkt";
-    const subtitle = `${product.articletype || ""}${product.brandname ? " | " + product.brandname : ""}`;
 
-    const price = product.price ?? "";
+    const subtitle = `${product.articletype || ""}${
+      product.brandname ? " | " + product.brandname : ""
+    }`;
 
-    const discountHTML = "";
+    const price = Number(product.price ?? 0);
+    const discount = Number(product.discount ?? 0);
+
+    let priceHTML = `<p class="price">DKK <span>${price}</span>,-</p>`;
+
+    if (discount > 0) {
+      const newPrice = Math.round(price * (1 - discount / 100));
+
+      priceHTML = `
+        <p class="price price--discount">
+          DKK <span class="oldPrice">${price}</span>,-
+          <span class="newPrice">${newPrice}</span>,-
+          <span class="discountBadge">-${discount}%</span>
+        </p>
+      `;
+    }
 
     productContainer.innerHTML += `
       <article class="smallProduct ${product.soldout ? "is-soldout" : ""}">
@@ -40,9 +56,7 @@ function showProducts(productsArr) {
         <h3>${title}</h3>
         <p class="subtle">${subtitle}</p>
 
-        <p class="price">DKK <span>${price}</span>,-</p>
-
-        ${discountHTML}
+        ${priceHTML}
 
         <a href="product.html?id=${product.id}">Read More</a>
       </article>

@@ -77,7 +77,7 @@ if (!id) {
               ${
                 hasDiscount
                   ? `DKK <s>${data.price}</s> <strong>${data.discountedPrice}</strong>,-`
-                  : `DKK ${price},-`
+                  : `DKK ${data.price},-`
               }
             </p>
 
